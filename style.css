@@ -1,0 +1,284 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+/* CONTENIDO */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+/* CAJA PRINCIPAL */
+.practice-english {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* PLAYER */
+.player {
+    background: hsl(157, 57%, 46%);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+#play1, #play2 {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#progress1, #progress2 {
+    flex: 1;
+    height: 4px;
+    appearance: none;
+    background: white;
+    border-radius: 10px;
+    accent-color: white;
+}
+
+#progress1::-webkit-slider-thumb,
+#progress2::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+#navbar {
+    background: #ffffff;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+#navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo izquierda, UL derecha */
+    width: 70%;
+    margin: auto;
+}
+
+/* LOGO */
+.logo-container img {
+    height: 90px;
+}
+
+/* MENÚ */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* espacio entre enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #00b894; /* efecto hover */
+}
+
+/* TEXTOS */
+.practice-english h1,
+.practice-english h2,
+.practice-english h3 {
+    margin-bottom: 20px;
+}
+
+h1, h3, h5 {
+    font-weight: normal;
+}
+
+/* CONTENEDOR DE COMENTARIOS */
+.comentarios {
+    width:80%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* TEXTOS */
+.comentarios h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.comentarios p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* INPUTS Y TEXTAREA */
+.comentarios textarea,
+.comentarios input[type="text"],
+.comentarios input[type="email"] {
+    width: 100%;
+    margin: 8px 0 15px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dad5d5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color:rgba(236, 231, 231, 0.901);
+}
+
+/* CHECKBOX */
+.check {
+    display: flex;           /* checkbox y texto en línea */
+    align-items: center;     /* centrado vertical */
+    gap: 8px;                /* espacio entre checkbox y texto */
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.check input {
+    margin: 0;               /* elimina margen extra */
+}
+
+/* BOTÓN */
+.comentarios button {
+    padding: 10px 20px;
+    background-color: white;   /* fondo blanco */
+    color: green;              /* texto verde */
+    border: 2px solid green;   /* borde verde */
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    display: block;
+    margin-left: auto;
+}
+.comentarios button:hover {
+    background-color: #ffffff;
+    border: none;                /* borde desaparece */
+    background-color: rgb(240, 241, 240)
+}
+
+.footer {
+    background-color: #b6b0b0;
+    color: rgb(20, 139, 75);
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    font-size:28px;
+}
+
+.footer-container {
+    display: flex;                  /* hace filas de columnas */
+    justify-content: space-between;  /* separa las columnas */
+    flex-wrap: wrap;                /* para que en pantallas pequeñas se acomoden */
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;                      /* espacio entre columnas */
+}
+
+.footer-column {
+    flex: 1;                        /* ocupa espacio igual */
+    min-width: 200px;               /* evita que se achiquen demasiado */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.footer {
+    background-color: #e2e0e0cc;
+    color: rgb(69, 130, 99);
+    padding: 40px 20px 20px 20px;
+    font-family: Arial, sans-serif;
+    font-size:30px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* empuja contenido al final */
+    padding: 40px 20px;
+    min-height: 200px;          /* altura mínima del footer */
+}
+
+.mensaje-estilo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease; /* efecto suave al cambiar color */
+
+.correcto { color: green; }
+.parcial { color: orange; }
+.incorrecto { color: red; }
+}
+button {
+  background-color: #4CAF50; /* color de fondo verde */
+  color: white; /* color del texto */
+  padding: 18px 24px; /* espacio interno */
+  font-size: 18px; /* tamaño del texto */
+  border: none; /* quitar borde */
+  border-radius: 8px; /* esquinas redondeadas */
+  cursor: pointer; /* cambiar el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* transición suave */
+  text-align: center
+  
+}
+
+button:hover {
+  background-color: #45a049; /* color cuando el mouse está encima */
+}
+
+button:active {
+  background-color: #3e8e41; /* color al hacer clic */
+}
+.boton-centro {
+  text-align: center; /* centra horizontalmente */
+  margin-top: 20px;   /* opcional, para separar de arriba */
+}.boton-centro {
+  display: flex;
+  flex-direction: column; /* apila elementos verticalmente */
+  align-items: center;    /* centra horizontalmente */
+  gap: 10px;              /* espacio entre botón y mensaje */
+  margin-top: 20px;
+}
+
+#resultado {
+  font-weight: bold;      /* opcional: para destacar el mensaje */
+  text-align: center;     /* asegura que el texto esté centrado */
+}
