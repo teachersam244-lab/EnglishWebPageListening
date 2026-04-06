@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Course Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Inscripción curso de inglés</h1>
+
+<form id="formulario">
+
+  <label>Nombre:</label><br>
+  <input type="text" id="nombre" required><br><br>
+
+  <label>Correo:</label><br>
+  <input type="email" id="correo" required><br><br>
+
+  <label>Edad:</label><br>
+  <input type="number" id="edad" min="5" max="100" required><br><br>
+
+  <label>Nivel de inglés:</label><br>
+  <select id="nivel">
+    <option value="Basico">Básico</option>
+    <option value="Intermedio">Intermedio</option>
+    <option value="Avanzado">Avanzado</option>
+  </select><br><br>
+
+  <button type="submit">Inscribirse</button>
+
+</form>
+
+<div id="lista"></div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
