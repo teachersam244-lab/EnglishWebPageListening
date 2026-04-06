@@ -1,0 +1,20 @@
+# Usamos una imagen base de Node.js
+FROM node:18
+
+# Creamos el directorio de la aplicación dentro del contenedor
+WORKDIR /app
+
+# Copiamos los archivos de dependencias primero para aprovechar el cache
+COPY package*.json ./
+
+# Instalamos las dependencias
+RUN npm install
+
+# Copiamos el resto del proyecto
+COPY . .
+
+# Exponemos el puerto en el que correrá el servidor
+EXPOSE 3000
+
+# Comando para correr la app
+CMD ["node", "server.js"]
